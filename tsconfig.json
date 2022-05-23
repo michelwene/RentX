@@ -17,10 +17,10 @@
     "baseUrl": ".",
   },
   "paths": {
-    "@/components/*": ["src/components/*"],
-    "@/pages/*": ["src/pages/*"],
-    "@/styles/*": ["src/styles/*"]
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx","jest.setup.js", "jest.config.js"],
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/styles/*": ["styles/*"]
+    },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js","jest.setup.js", "jest.config.js"],
   "exclude": ["node_modules"]
 }
