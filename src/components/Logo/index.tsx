@@ -4,7 +4,7 @@ export function Logo() {
   return (
     <Image
       src="/assets/Logotipo.svg"
-      alt="Logo tipo RentX"
+      alt="Logotipo RentX"
       width="200px"
       height="22px"
     />
