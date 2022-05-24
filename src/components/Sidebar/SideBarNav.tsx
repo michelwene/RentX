@@ -18,7 +18,7 @@ export function SideBarNav() {
       >
         <NavLink icon={RiHome2Line} href="/listagem" />
         <NavLink icon={RiCarLine} href="/filtrar-carros" />
-        <NavLink icon={BsPerson} href="/login" />
+        <NavLink icon={BsPerson} href="/perfil" />
       </Flex>
     </Stack>
   );
