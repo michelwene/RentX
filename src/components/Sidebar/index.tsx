@@ -1,11 +1,11 @@
 import {
-  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  Flex,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { useSidebarDrawer } from "src/context/SidebarDrawerContext";
@@ -36,8 +36,15 @@ export function Sidebar() {
   }
 
   return (
-    <Box as="aside" position="absolute" top="0">
+    <Flex
+      as="aside"
+      width="80px"
+      height="100vh"
+      bg="black"
+      position="absolute"
+      top="0"
+    >
       <SideBarNav />
-    </Box>
+    </Flex>
   );
 }

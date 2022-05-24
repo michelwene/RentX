@@ -10,13 +10,28 @@ interface NavLinkProps extends ChakraLinkProps {
   icon: ElementType;
   children?: React.ReactNode;
   href: string;
+  width?: string;
+  height?: string;
 }
 
-export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
+export function NavLink({
+  icon,
+  children,
+  href,
+  width,
+  height,
+  ...rest
+}: NavLinkProps) {
   return (
     <ActiveLink href={href} passHref>
       <ChakraLink display="flex" align-items="center" {...rest}>
-        <Icon as={icon} fontSize="20" />
+        <Icon
+          as={icon}
+          fontSize="20"
+          width={width}
+          height={height}
+          color="white"
+        />
       </ChakraLink>
     </ActiveLink>
   );

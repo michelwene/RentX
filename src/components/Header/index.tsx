@@ -7,9 +7,11 @@ interface HeaderProps {
 
 export function Header({ children }: HeaderProps) {
   return (
-    <Flex as="header">
-      <Flex width="90vw" justify="space-between" mx="auto" align="center">
-        <Heading as="h2">{children}</Heading>
+    <Flex as="header" borderBottom="1px" borderColor="gray.100" height="80px">
+      <Flex width="80vw" justify="space-between" mx="auto" align="center">
+        <Heading as="h2" fontSize={18}>
+          {children}
+        </Heading>
         <Button
           rightIcon={<BsPerson fontSize={32} />}
           variant="link"
