@@ -21,7 +21,7 @@ export default function Home() {
           <Text color="white" pb={16}>
             Vários modelos para você dirigir seguro, com conforto e segurança.
           </Text>
-          <Link href="/listing" passHref>
+          <Link href="/listagem" passHref>
             <Button
               colorScheme="red"
               borderRadius={0}
