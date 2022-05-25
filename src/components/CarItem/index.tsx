@@ -8,6 +8,7 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import { ReactElement } from "react";
 
 type CarTypes = {
   title: string;
@@ -20,9 +21,10 @@ type CarTypes = {
 interface CarItemProps {
   car: CarTypes;
   onClick?: () => void;
+  icon: ReactElement;
 }
 
-export function CarItem({ car, onClick }: CarItemProps) {
+export function CarItem({ car, icon, onClick }: CarItemProps) {
   return (
     <GridItem
       bg="white"
@@ -30,22 +32,32 @@ export function CarItem({ car, onClick }: CarItemProps) {
       cursor="pointer"
       display="flex"
       flexDirection="column"
+      onClick={onClick}
     >
-      <Image src={car.image} alt={car.name} />
-      <HStack spacing={16}>
+      <Image src={car.image} alt={car.name} p={8} />
+      <HStack
+        spacing={16}
+        justifyContent="space-between"
+        px={6}
+        py={5}
+        borderTop="1px"
+        borderColor="gray.100"
+      >
         <Flex gap={8}>
           <Box>
-            <Text>{car.title}</Text>
+            <Text color="#AEAEB3">{car.title}</Text>
             <Heading as="h2" fontSize={18} fontWeight={500}>
               {car.name}
             </Heading>
           </Box>
           <Box>
-            <Text>Ao dia</Text>
-            <Text>{car.price}</Text>
+            <Text color="#AEAEB3">Ao dia</Text>
+            <Text color="red" fontWeight={600}>
+              {car.price}
+            </Text>
           </Box>
         </Flex>
-        <Icon />
+        <Box>{icon}</Box>
       </HStack>
     </GridItem>
   );

@@ -14,6 +14,9 @@ import {
 import { CarItem } from "src/components/CarItem";
 import { Header } from "src/components/Header";
 import { Sidebar } from "src/components/Sidebar";
+import Energy from "../../../public/assets/Energia.svg";
+import Gasoline from "../../../public/assets/Gasolina.svg";
+import Hybrid from "../../../public/assets/Hibrido.svg";
 
 export default function listing() {
   return (
@@ -23,11 +26,10 @@ export default function listing() {
       <Flex
         width="100%"
         mx="auto"
-        height="100vh"
-        as="section"
-        pt={16}
+        height="100%"
+        as="main"
+        pt={10}
         flexDirection="column"
-        bg="#F4F5F6"
       >
         <Box
           width="80%"
@@ -42,7 +44,7 @@ export default function listing() {
           </Flex>
         </Box>
         <Grid width="80%" mx="auto" mt={8}>
-          <SimpleGrid spacing={16} columns={3}>
+          <SimpleGrid spacing={8} columns={3}>
             <CarItem
               car={{
                 title: "Fusca",
@@ -50,6 +52,7 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
+              icon={<Energy />}
             />
             <CarItem
               car={{
@@ -58,6 +61,7 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
+              icon={<Gasoline />}
             />
             <CarItem
               car={{
@@ -66,6 +70,7 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
+              icon={<Energy />}
             />
             <CarItem
               car={{
@@ -74,6 +79,7 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
+              icon={<Gasoline />}
             />
             <CarItem
               car={{
@@ -82,6 +88,7 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
+              icon={<Hybrid />}
             />
             <CarItem
               car={{
@@ -90,6 +97,7 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
+              icon={<Gasoline />}
             />
           </SimpleGrid>
         </Grid>

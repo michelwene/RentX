@@ -10,4 +10,11 @@ export const theme = extendTheme({
   fonts: {
     body: "Inter, sans-serif",
   },
+  styles: {
+    global: {
+      body: {
+        backgroundColor: "#F4F5F6",
+      },
+    },
+  },
 });

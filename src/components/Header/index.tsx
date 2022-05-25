@@ -8,7 +8,13 @@ interface HeaderProps {
 
 export function Header({ children }: HeaderProps) {
   return (
-    <Flex as="header" borderBottom="1px" borderColor="gray.100" height="80px">
+    <Flex
+      as="header"
+      borderBottom="1px"
+      borderColor="gray.100"
+      height="80px"
+      bg="white"
+    >
       <Flex width="80vw" justify="space-between" mx="auto" align="center">
         <Heading as="h2" fontSize={18}>
           {children}
