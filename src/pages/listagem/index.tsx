@@ -1,4 +1,17 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  calc,
+  Flex,
+  Grid,
+  GridItem,
+  Heading,
+  HStack,
+  Icon,
+  Image,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
+import { CarItem } from "src/components/CarItem";
 import { Header } from "src/components/Header";
 import { Sidebar } from "src/components/Sidebar";
 
@@ -7,9 +20,17 @@ export default function listing() {
     <>
       <Header>Início</Header>
       <Sidebar />
-      <Flex width="89%" mx="auto" height="100%" as="section" mt={16}>
+      <Flex
+        width="100%"
+        mx="auto"
+        height="100vh"
+        as="section"
+        pt={16}
+        flexDirection="column"
+        bg="#F4F5F6"
+      >
         <Box
-          width="90%"
+          width="80%"
           mx="auto"
           borderBottom="1px"
           borderColor="gray.100"
@@ -20,6 +41,58 @@ export default function listing() {
             <Text>Total 12 carros</Text>
           </Flex>
         </Box>
+        <Grid width="80%" mx="auto" mt={8}>
+          <SimpleGrid spacing={16} columns={3}>
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Audi.svg",
+              }}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Audi.svg",
+              }}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Audi.svg",
+              }}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Audi.svg",
+              }}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Audi.svg",
+              }}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Audi.svg",
+              }}
+            />
+          </SimpleGrid>
+        </Grid>
       </Flex>
     </>
   );
