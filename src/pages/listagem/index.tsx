@@ -52,15 +52,6 @@ export default function listing() {
                 name: "Fusca",
                 image: "/assets/Audi.svg",
               }}
-              icon={<Energy />}
-            />
-            <CarItem
-              car={{
-                title: "Fusca",
-                price: 1000,
-                name: "Fusca",
-                image: "/assets/Audi.svg",
-              }}
               icon={<Gasoline />}
             />
             <CarItem
@@ -68,7 +59,7 @@ export default function listing() {
                 title: "Fusca",
                 price: 1000,
                 name: "Fusca",
-                image: "/assets/Audi.svg",
+                image: "/assets/Corvete-Z06.svg",
               }}
               icon={<Energy />}
             />
@@ -77,7 +68,7 @@ export default function listing() {
                 title: "Fusca",
                 price: 1000,
                 name: "Fusca",
-                image: "/assets/Audi.svg",
+                image: "/assets/Porche.svg",
               }}
               icon={<Gasoline />}
             />
@@ -86,18 +77,27 @@ export default function listing() {
                 title: "Fusca",
                 price: 1000,
                 name: "Fusca",
-                image: "/assets/Audi.svg",
+                image: "/assets/Lambo.svg",
+              }}
+              icon={<Energy />}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Volvo.svg",
+              }}
+              icon={<Gasoline />}
+            />
+            <CarItem
+              car={{
+                title: "Fusca",
+                price: 1000,
+                name: "Fusca",
+                image: "/assets/Lancer.svg",
               }}
               icon={<Hybrid />}
-            />
-            <CarItem
-              car={{
-                title: "Fusca",
-                price: 1000,
-                name: "Fusca",
-                image: "/assets/Audi.svg",
-              }}
-              icon={<Gasoline />}
             />
           </SimpleGrid>
         </Grid>

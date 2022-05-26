@@ -1,13 +1,4 @@
-import {
-  Box,
-  Flex,
-  GridItem,
-  Heading,
-  HStack,
-  Icon,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, GridItem, Heading, Image, Text } from "@chakra-ui/react";
 import { ReactElement } from "react";
 
 type CarTypes = {
@@ -33,13 +24,13 @@ export function CarItem({ car, icon, onClick }: CarItemProps) {
       display="flex"
       flexDirection="column"
       onClick={onClick}
+      justifyContent="space-between"
     >
       <Image src={car.image} alt={car.name} p={8} />
-      <HStack
-        spacing={16}
+      <Flex
         justifyContent="space-between"
         px={6}
-        py={5}
+        py={3}
         borderTop="1px"
         borderColor="gray.100"
       >
@@ -57,8 +48,8 @@ export function CarItem({ car, icon, onClick }: CarItemProps) {
             </Text>
           </Box>
         </Flex>
-        <Box>{icon}</Box>
-      </HStack>
+        <Flex align="center">{icon}</Flex>
+      </Flex>
     </GridItem>
   );
 }
